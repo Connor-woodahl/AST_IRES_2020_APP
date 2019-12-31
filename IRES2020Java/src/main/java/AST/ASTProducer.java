@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.Collection;
 import org.apache.commons.io.FileUtils;
 import com.github.javaparser.StaticJavaParser;
-import com.github.javaparser.ast.CompilationUnit;
+import com.github.javaparser.ast.*;
 import com.github.javaparser.printer.YamlPrinter;
 
 /*
@@ -78,9 +78,9 @@ public class ASTProducer {
 				  
 				  // Commenting out this code but can be used to see the text of the ast produced
 				  
-				  //				  BufferedWriter writerTXT = new BufferedWriter(new FileWriter(m));
-				  //				  writerTXT.write(printer.output(cu));
-				  //				  writerTXT.close();
+				  //  				  BufferedWriter writerTXT = new BufferedWriter(new FileWriter(m));
+				  //  			      writerTXT.write(printer.output(cu));
+				  //  				  writerTXT.close();
 				  
 			 }catch(Exception e) {
 				 System.out.println(e.getMessage());
